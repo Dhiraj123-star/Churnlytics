@@ -4,22 +4,23 @@ This API provides a solution for predicting customer churn based on their subscr
 
 ## Core Features 🚀
 
-1. **Churn Prediction** 🔮:
-   - The API predicts the likelihood of a customer churning based on their attributes, such as contract type, tenure, payment method, and more.
-   - Predictions are made using a trained machine learning model.
+1. **Churn Prediction** 🔮  
+   - Predicts the likelihood of a customer churning based on their attributes, such as contract type, tenure, payment method, and more.  
+   - Uses a trained machine learning model.
 
-2. **Batch Prediction** 📥:
-   - Users can upload a CSV file containing multiple customer records.
-   - The API processes the CSV and returns predictions for each customer in the dataset.
+2. **Batch Prediction** 📥  
+   - Upload a CSV file with multiple customer records.  
+   - Returns predictions for each customer in the dataset.
 
-3. **Model and Encoder Management** 🔧:
-   - The API supports loading and using a pre-trained machine learning model and encoders.
-   - If a new category is encountered in the data (e.g., a new contract type), the model will classify it as 'UNKNOWN', preventing errors from unseen labels.
-   - The encoders are updated after every prediction batch to ensure they reflect the most recent data.
+3. **Model and Encoder Management** 🔧  
+   - Loads and uses pre-trained machine learning model and encoders.  
+   - Unseen categorical values are labeled as `'UNKNOWN'`.  
+   - Encoders are updated after each batch to reflect new categories.
 
-4. **Error Handling** ⚠️:
-   - Comprehensive error handling to guide users if there are missing columns or issues during prediction.
-   - Provides clear messages when required columns are missing or if there is a problem with the model or encoders.
+4. **Error Handling** ⚠️  
+   - Comprehensive error handling for missing columns, invalid data, or internal errors.  
+   - Clear messages guide users to resolve issues.
+
 
 ## API Endpoints 🔌
 
