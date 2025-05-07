@@ -1,0 +1,22 @@
+# Ignore Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore environment & virtual environments
+.env
+venv/
+.venv/
+
+# Ignore OS-specific files
+.DS_Store
+
+# Ignore local tools and configs
+*.log
+*.sqlite3
+*.db
+
+# Ignore Git and Docker files
+.git
+.gitignore
+.dockerignore
