@@ -1,0 +1,19 @@
+# Python virtual environments
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+.env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# VS Code settings
+.vscode/
+
